@@ -20,7 +20,7 @@
         <div class="row mb-3">
             <label for="chargeAmount" class="col-sm-3 col-form-label">Charge Amount</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" id="chargeAmount" onchange="checkChargeValidation()">
+                <input type="text" style="background-color:#00ff00 ;" class="form-control" id="chargeAmount" onchange="checkChargeValidation()">
             </div>
         </div>
 
@@ -35,7 +35,7 @@
             <label for="inputEmail3" class="col-sm-3 col-form-label"></label>
             <div class="col-sm-6">
 
-                <button type="submit" style="background-color:forestgreen ; color:white" class="btn btn-primary" id="exitChargeScreen">Exit</button>
+               
 
             </div>
         </div>
@@ -43,8 +43,14 @@
     </form>
 </div>
 
-<button type="submit" style="background-color: maroon ; color:white" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">API Setting</button>
-<button type="submit" style="background-color: maroon ; color:white" class="btn btn-primary" onclick="GetProcessDetails()">Process</button>
+ <div class="row mb-3">
+
+      <div class="col-sm-6" style="margin-left:5%;margin-top:2%;">
+<button type="submit" style="background-color: #800080 ; color:white" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">API Setting</button>
+<button type="submit" style="background-color: #800080 ; color:white" class="btn btn-primary" onclick="GetProcessDetails()">Process</button>
+ <button type="submit" style="background-color:forestgreen ; color:white; width:18%" class="btn btn-primary" id="exitChargeScreen">Exit</button>
+  </div>
+ </div>
 
 @*Modal For API Settings *@
 <div class="modal fade" id="exampleModal"
@@ -141,19 +147,19 @@
                 <div class="row mb-12">
                     <label for="process" class="col-sm-3 col-form-label">Amount</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="processamount" />
+                        <input type="text" style="background-color:#000000;color: #00ff00;" class="form-control" id="processamount" />
                     </div>
                 </div>
                 <div class="row mb-12">
                     <label for="processstatus" class="col-sm-3 col-form-label">Status</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="processstatus">
+                        <input type="text" style="background-color:#000000;color: #00ff00;" class="form-control" id="processstatus">
                     </div>
                 </div>
                 <div class="row mb-12">
                     <input type="hidden" value="@ViewBag.TransportText" id="ReturnUrl" name="ReturnUrl" style="display:none" />
                     
-                    <textarea class="form-control" id="processstatusLong" name="Description" rows="6" cols="60"></textarea>
+                    <textarea style="background-color:#000000;color: red;" class="form-control" id="processstatusLong" name="Description" rows="6" cols="60"></textarea>
                 </div>
 
             </div>
